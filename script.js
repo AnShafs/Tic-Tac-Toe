@@ -91,18 +91,18 @@ $(document).ready(function () {
     //check gameOver
     function gameOver() {
         if (findWinner(computerMoves)) {
-            showResult("You lost!");
+            showResult("YOU LOST :(");
             return true;
         }
         if (findWinner(playerMoves)) {
-            showResult("You won!");
+            showResult("YOU WON!");
             return true;
         }
 
         for (let i = 0; i < gameField.length; i++) {
             if (gameField[i] == undefined) break;
             if (i == gameField.length - 1) {
-                showResult("It's a draw!");
+                showResult("IT WAS A DRAW.");
                 return true;
             }
         }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center" id="first">
+        </div>
+        <div class="row justify-content-center">
+          <div class="game-field">
+           <table id="field">
+            <tr>
+                <td><input type="button" class = "btn" value=''></td>
+                <td><input type="button" class = "btn" value=''></td>
+                <td><input type="button" class = "btn" value=''></td>
+            </tr>
+            <tr>
+                <td><input type="button" class = "btn" value=''></td>
+                <td><input type="button" class = "btn" value=''></td>
+                <td><input type="button" class = "btn" value=''></td>
+            </tr>
+            <tr>
+                <td><input type="button" class = "btn" value=''></td>
+                <td><input type="button" class = "btn" value=''></td>
+                <td><input type="button" class = "btn" value=''></td>
+            </tr>
+            </table>
+            </div>
+        </div>
+    </div>
+    <div class="modal_form" id="start_form">  
+       <div class="row justify-content-center question">
+        Choose X or O:</div>
+        <div class="row justify-content-center">
+            <button class="btn2" id="X">X</button>
+            <button class="btn2" id="O">O</button>
+        </div>
+    </div>
+    <div class="modal_form" id="result_form">  
+       <div class="row justify-content-center question">
+        GAME OVER!</div>
+        <div class="row justify-content-center" id="result"></div>
+    </div>
+    <div id="overlay"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
